@@ -4,25 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="Header">
-        <img src="images/fengr_logo.svg" alt="Fengr logo">
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li"></li>
-                <li class="header__li"></li>
-                <li class="header__li"></li>
+   <header class="header">
+    <img class="header__logo" src="images/fengr_logo.svg" alt="Fengr logo">
+   </header>
+   <div class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__list__item">
+                <a class="navbar__list__item__link" href="#">Heim</a>
+            </li>
+            <li class="navbar__list__item">
+                <a class="navbar__list__item__link" href="#">Um okkur</a>
+            </li>
+            <li class="navbar__list__item">
+                <a class="navbar__list__item__link" href="mailto:fengr@fengr.is">Hafa samband</a>
+            </li>
+        </ul>
+   </div>
+    <main class="main">
+        <h1 class="main__header">FENGR</h1>
+        <section class="about">
+            <h2 class="about__header">HVAÐ ER FENGR?</h2>
+            <p class="about__content">Fengr er handgert chai síróp sem ilmar af jólunum!</p>
+        </section>
+        <section class="how">
+            <h2 class="how__header">HVERNIG ER ÞAÐ NOTAÐ?</h2>
+            <p class="how__content">Það má nota það til þess að útbúa ilmandi te, hella því yfir ís, rista möndlur uppúr því eða nota það í bakstur. 
+                <br> Og bara hvað annað sem þér dettur í hug!</p>
+            <img class="how__img" src="images/Fengr_leidbeiningar-te.png" alt="Chai te">
+            <img class="how__img" src="images/Fengr_leidbeiningar-mondlur.png" alt="Möndlur">
+            <img class="how__img" src="images/Fengr_leidbeiningar-is.png" alt="Ís">
+        </section>
+        <section class="where">
+            <h2 class="where__header">HVAR GET ÉG KEYPT ÞAÐ?</h2>
+            <ul class="where__list">
+                <li class="where__list__item">Jólamarkaðnum í Heiðmörk</li>
+                <li class="where__list__item">Jólamarkaðnum á Hjartatorgi</li>
+                <li class="where__list__item">Jólaþorpinu í Hafnarfirði</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <p>Some text</p>
+        </section>
     </main>
-    <footer>
-        <p>Information</p>
+    <footer class="contact">
+        <ul class="contact__list">
+            <li class="contact__list__item">Fengr</li>
+            <li class="contact__list__item"><a class="contact__list__item__link" href="mailto:fengr@fengr.is">fengr@fengr.is</a></li>
+            <li class="contact__list__item">s. 691 4792</li>
+        </ul>
     </footer>
 </body>
 </html>

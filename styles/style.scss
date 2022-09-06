@@ -1,0 +1,128 @@
+
+
+@mixin headings {
+        font-family: $Headings;
+        padding-top: 30px;
+        padding-bottom: 5px;
+}
+
+@import './header';
+@import './variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: $brown;
+    display: flex;
+    list-style: none;
+    justify-content: right;
+
+    &__list {
+        display: inline-block;
+        padding: 20px 0px;
+        font-family: 'Jost', sans-serif;
+        text-transform: uppercase;
+
+        &__item {
+            display: inline-block;
+            color: antiquewhite;
+            text-decoration: none;
+            list-style: none;
+
+            &__link {
+                color: antiquewhite;
+                padding: 20px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $sandDark;
+                    color: $brown;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    background-color: antiquewhite;
+    justify-content: center;
+    text-align: center;
+    color: $TextColor;
+    padding: 20px;
+
+    &__header {
+        font-family: $Headings;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+.about {
+    
+    &__header {
+        @include headings();
+    }
+
+    &__content {
+        font-family: $Text;
+    }
+}
+
+.how {
+
+    &__header {
+        @include headings();
+    }
+
+    &__img {
+        width: 280px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    &__content {
+        font-family: $Text;
+    }
+}
+
+.where {
+
+    &__header {
+        @include headings();
+    }
+
+    &__list {
+        font-family: $Text;
+        list-style: none;
+
+        &__item {
+            padding-bottom: 3px;
+        }
+    }
+}
+
+.contact {
+    background-color: $brown;
+
+    &__list {
+        color: $TextColor;
+        display: flex;
+        padding: 10px;
+        list-style: none;
+
+        &__item {
+            color: antiquewhite;
+            font-family: $Headings;
+            padding: 20px;
+
+            &__link {
+                color: antiquewhite;
+                text-decoration: none;
+            }
+        }
+    }
+}

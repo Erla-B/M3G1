@@ -1,0 +1,11 @@
+@import './variables';
+
+.header {
+    display: flex;
+    background-color: $sand;
+    justify-content: center;
+
+    &__logo {
+        width: 300px;
+    }
+}
