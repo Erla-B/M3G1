@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ######## Header ######## */
 .header {
   display: flex;
   background-color: #d5b799;
@@ -7,12 +14,7 @@
   width: 300px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* ######## Navbar ######## */
 .navbar {
   background-color: #a43523;
   display: flex;
@@ -41,6 +43,7 @@
   color: #a43523;
 }
 
+/* ######## Main ######## */
 .main {
   background-color: antiquewhite;
   justify-content: center;
@@ -70,7 +73,7 @@
 }
 .how__img {
   width: 280px;
-  padding: 20px;
+  margin: 20px;
   border-radius: 10px;
 }
 .how__content {
@@ -90,6 +93,7 @@
   padding-bottom: 3px;
 }
 
+/* ######## Footer with contact info ######## */
 .contact {
   background-color: #a43523;
 }
@@ -109,4 +113,4 @@
   text-decoration: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

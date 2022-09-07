@@ -1,13 +1,11 @@
-
+@use './abstracts' as a;
 
 @mixin headings {
-        font-family: $Headings;
+        font-family: a.$Headings;
         padding-top: 30px;
         padding-bottom: 5px;
 }
 
-@import './header';
-@import './variables';
 
 * {
     box-sizing: border-box;
@@ -15,8 +13,20 @@
     padding: 0;
 }
 
+/* ######## Header ######## */
+.header {
+    display: flex;
+    background-color: a.$sand;
+    justify-content: center;
+
+    &__logo {
+        width: 300px;
+    }
+}
+
+/* ######## Navbar ######## */
 .navbar {
-    background-color: $brown;
+    background-color: a.$brown;
     display: flex;
     list-style: none;
     justify-content: right;
@@ -39,23 +49,24 @@
                 text-decoration: none;
 
                 &:hover {
-                    background-color: $sandDark;
-                    color: $brown;
+                    background-color: a.$sandDark;
+                    color: a.$brown;
                 }
             }
         }
     }
 }
 
+/* ######## Main ######## */
 .main {
     background-color: antiquewhite;
     justify-content: center;
     text-align: center;
-    color: $TextColor;
+    color: a.$TextColor;
     padding: 20px;
 
     &__header {
-        font-family: $Headings;
+        font-family: a.$Headings;
         padding-bottom: 10px;
         padding-top: 10px;
     }
@@ -68,7 +79,7 @@
     }
 
     &__content {
-        font-family: $Text;
+        font-family: a.$Text;
     }
 }
 
@@ -80,12 +91,12 @@
 
     &__img {
         width: 280px;
-        padding: 20px;
+        margin: 20px;
         border-radius: 10px;
     }
 
     &__content {
-        font-family: $Text;
+        font-family: a.$Text;
     }
 }
 
@@ -96,7 +107,7 @@
     }
 
     &__list {
-        font-family: $Text;
+        font-family: a.$Text;
         list-style: none;
 
         &__item {
@@ -105,18 +116,19 @@
     }
 }
 
+/* ######## Footer with contact info ######## */
 .contact {
-    background-color: $brown;
+    background-color: a.$brown;
 
     &__list {
-        color: $TextColor;
+        color: a.$TextColor;
         display: flex;
         padding: 10px;
         list-style: none;
 
         &__item {
             color: antiquewhite;
-            font-family: $Headings;
+            font-family: a.$Headings;
             padding: 20px;
 
             &__link {
